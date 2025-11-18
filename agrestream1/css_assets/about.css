@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;   
+    line-height: 1.6;               
+    margin: 0;                      
+    padding: 0;                      
+    background-color: #f8f8f8;       
+    color: #333;                     
+}
+
+
+header {
+    text-align: center;              
+    padding: 20px 0;                 
+    background-color: #fff;
+}
+
+.logo {
+    max-width: 100%;                 
+    height: auto;                    
+}
+
+
+nav {
+    background-color: #4CAF50;       
+    padding: 10px 0;                 
+}
+
+nav ul {
+    list-style: none;                
+    padding: 0;                     
+    margin: 0;                       
+    display: flex;                   
+    justify-content: center;         
+    flex-wrap: wrap;                 
+}
+
+nav li a {
+    color: white;                    
+    text-decoration: none;           
+    padding: 10px 20px;              
+    display: block;                  
+    transition: background-color 0.3s; 
+}
+
+nav li a:hover {
+    background-color: #45a049;       
+}
+
+
+main {
+    padding: 20px;                   
+    max-width: 1200px;               
+    margin: auto;                    
+}
+
+section {
+    background-color: #fff;          
+    padding: 20px;                   
+    margin-bottom: 20px;             
+    border-radius: 8px;              
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+
+
+.about-intro img {
+    max-width: 100%;                 
+    height: auto;                    
+    border-radius: 8px;              
+    margin-top: 10px;                
+    display: block;                  
+}
+
+.about-intro {
+    display: flex;                   
+    flex-direction: column;          
+    gap: 20px;                       
+}
+
+
+@media (min-width: 768px) {
+    .about-intro {
+        flex-direction: row;         
+        align-items: center;         
+    }
+}
+
+
+footer {
+    text-align: center;              
+    padding: 20px;                   
+    background-color: #333;          
+    color: white;                    
+}
+
+.social-links a {
+    color: white;                    
+    margin: 0 10px;                  
+    text-decoration: none;           
+}

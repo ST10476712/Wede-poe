@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit an Enquiry | Products, Livestock & Community - Agristream</title>
+    <meta name="description" content="Use the Agristream enquiry form to ask about our fresh produce, livestock availability, farming partnerships, or community initiatives in Vuwani Tshivhulana, Limpopo.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="centered-logo-header">
+        <div class="logo-container">
+            <img src="_images/116336060_2636470493242313_4747258866796469677_n.jpg" 
+                 alt="Agristream Farm Logo" 
+                 style="height:auto; max-width: 100%;">
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li> 
+            <li><a href="about.html">About Us</a></li> 
+            <li><a href="products.html">Products</a></li> 
+            <li><a href="enquiry.html">Enquiry</a></li> 
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="enquiry-form-section">
+            <h2>Product & Service Enquiry</h2>
+            <p>
+                Have a question about our products or services? 
+                Please fill out the form below, and we'll get back to you as soon as possible!
+            </p>
+            
+            <form action="#" method="post" class="enquiry-form">
+    
+    <div class="form-row">
+        <div class="form-group half-width">
+            <label for="full_name">Full Name:</label>
+            <input type="text" id="full_name" name="full_name" required>
+        </div>
+        <div class="form-group half-width">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group half-width">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+        </div>
+        <div class="form-group half-width">
+            <label for="enquiry_type">I am enquiring about:</label>
+            <select id="enquiry_type" name="enquiry_type">
+                <option value="general">General Enquiry</option>
+                <option value="products">Products</option>
+                <option value="livestock">Livestock</option>
+                <option value="community">Community Initiatives</option>
+            </select>
+        </div>
+    </div>
+    
+    <div class="form-group full-width">
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+    </div>
+    
+    <button type="submit" class="cta-button submit-button">Submit Enquiry</button>
+</form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Agristream. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="Agristream">Facebook</a>
+            <a href="@agristream">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script> 
+</body>
+</html>

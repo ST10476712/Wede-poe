@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Products for Sale | Regenerative Produce, Eggs & Livestock - Agristream</title>
+    <meta name="description" content="Browse Agristream's selection of farm-fresh, sustainably grown products, including organic vegetables, seasonal fruits, free-range eggs, and pasture-raised livestock. Filter and search easily.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="centered-logo-header">
+        <div class="logo-container">
+            <img src="_images/116336060_2636470493242313_4747258866796469677_n.jpg" 
+                 alt="Agristream Farm Logo" 
+                 style="height:auto; max-width: 100%;">
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li> 
+            <li><a href="about.html">About Us</a></li> 
+            <li><a href="products.html">Products</a></li> 
+            <li><a href="enquiry.html">Enquiry</a></li> 
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+    <section class="products-intro">
+        <h2>Our Farm-Fresh Products</h2>
+        <p>
+            From our pastures to your plate, discover the taste of truly regenerative farming. 
+            All of our products are raised and grown with care, ensuring the highest quality and flavor.
+        </p>
+    </section>
+
+    <section class="product-controls">
+        <input type="text" id="product-search" placeholder="Search products (e.g., eggs, fruit...)" aria-label="Search Products">
+        
+        <select id="product-filter" aria-label="Filter Products by Category">
+            <option value="all">Filter by Category</option>
+            <option value="Eggs">Eggs</option>
+            <option value="Livestock">Livestock</option>
+            <option value="Organic Produce">Organic Produce</option>
+        </select>
+        
+        <select id="product-sort" aria-label="Sort Products">
+            <option value="default">Sort By</option>
+            <option value="name-asc">Name (A-Z)</option>
+            <option value="name-desc">Name (Z-A)</option>
+        </select>
+    </section>
+
+    <section id="product-list-container" class="product-grid-main">
+        <p>Loading products...</p>
+    </section>
+    
+    <section class="contact-cta">
+        <h3>Ready to Order?</h3>
+        <a href="contact.html" class="cta-button">Contact Us to Place Your Order</a>
+    </section>
+</main>
+
+    <footer>
+        <p>&copy; 2025 Agristream. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="Agristream">Facebook</a>
+            <a href="@agristream">Instagram</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

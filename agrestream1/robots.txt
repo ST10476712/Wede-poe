@@ -1,0 +1,11 @@
+# Agristream robots.txt
+
+# Allow access to all web crawlers (Google, Bing, etc.)
+User-agent: *
+
+# Since all pages are public and important, we do not disallow any paths.
+# If you had a temporary 'test.html' or sensitive admin pages, you would disallow them here.
+Disallow: 
+
+# Specify the location of your sitemap
+Sitemap: https://www.agristream.co.za/sitemap.xml

@@ -1,0 +1,378 @@
+.mission-vision h3 {
+    cursor: pointer; 
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ccc;
+    margin-top: 15px;
+    user-select: none; 
+}
+
+.accordion-header-closed::after {
+    content: '\25B6'; 
+    float: right;
+    margin-left: 5px;
+    transition: transform 0.3s;
+}
+
+
+.accordion-header-open::after {
+    content: '\25BC'; 
+    float: right;
+    margin-left: 5px;
+    transition: transform 0.3s;
+}
+
+.dynamic-info-block {
+    margin: 20px 0;
+    padding: 15px;
+    border-left: 4px solid #4CAF50; 
+    background-color: #e8f5e9;
+}
+
+
+.error-message {
+    color: #cc0000; 
+    font-size: 0.9em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+.input-error {
+    border: 2px solid #cc0000 !important;
+    background-color: #ffeaea; 
+}
+
+
+.success-message {
+    background-color: #e6ffe6; 
+    border: 1px solid #009900;
+    color: #006600;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+.response-message {
+    background-color: #e3f4e3; 
+    border: 1px solid #4CAF50; 
+    color: #1e4d22;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+header {
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+
+.cta-button.cta-active {
+    background-color: #ff9900; 
+    border-color: #cc7a00;
+    transform: scale(0.98); 
+    transition: all 0.1s ease; 
+}
+
+.product-controls {
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px; 
+    margin-bottom: 30px;
+    padding: 0 20px; 
+}
+
+.product-controls input,
+.product-controls select {
+    flex: 1 1 30%; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    font-size: 1em;
+}
+
+@media (max-width: 768px) {
+    .product-controls {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+#product-list-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.product-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+}
+
+.product-image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 15px;
+    height: 150px; 
+    overflow: hidden; 
+}
+
+.product-image {
+    width: 32%; 
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer; 
+    border-radius: 4px;
+    opacity: 0.9;
+    transition: opacity 0.2s;
+}
+
+.product-image:hover {
+    opacity: 1;
+}
+
+.product-price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #4CAF50;
+    margin: 10px 0;
+}
+
+
+.lightbox-modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    padding-top: 60px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9); 
+}
+
+
+.lightbox-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    max-height: 90vh;
+    object-fit: contain;
+}
+
+
+#lightbox-caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+
+.lightbox-close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.map-section {
+    padding: 30px 0;
+    margin-top: 20px;
+}
+
+#agristream-map {
+    height: 400px; 
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-top: 15px;
+}
+
+
+header {
+    
+    transition: background-color 0.5s ease, color 0.5s ease; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: hsla(0, 2%, 69%, 0.296); 
+}
+
+
+.centered-logo-header {
+    display: block; 
+    text-align: center; 
+    padding: 20px 0; 
+}
+
+.logo-container {
+    display: inline-block; 
+    max-width: 400px; 
+    margin: 0 auto;
+}
+
+
+.centered-logo-header img {
+    
+    max-width: 100%;
+    height: auto; 
+}
+
+
+
+nav {
+    background-color: #4CAF50; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #45a049; 
+}
+
+
+
+.centered-logo-header h1 {
+    
+    font-family: Georgia, "Times New Roman", Times, serif; 
+    font-size: 1.8em; 
+    font-weight: 500; 
+    text-transform: uppercase;
+    letter-spacing: 2px; 
+    
+    
+    color: #ffffff; 
+    background-color: #38761d; 
+    
+    
+    padding: 10px 0; 
+    margin-top: 5px; 
+    margin-bottom: 0; 
+    
+    
+    border-top: 1px solid rgba(255, 255, 255, 0.2); 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+}
+
+.enquiry-form, .contact-form {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+
+.form-row {
+    display: flex;
+    gap: 20px; 
+    margin-bottom: 15px;
+}
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+
+.form-group.half-width {
+    flex: 1; 
+    min-width: 45%; 
+}
+
+.form-group.full-width {
+    width: 100%; 
+}
+
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    font-size: 1em;
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+.submit-button {
+    width: auto; 
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #008046; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.submit-button:hover {
+    background-color: #0a5a19;
+}
+
